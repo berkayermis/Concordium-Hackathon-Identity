@@ -56,3 +56,33 @@ Make sure to be in the same directory with concordium-client (/usr/local/bin)
 
 <img width="646" alt="Screen Shot 2023-02-21 at 04 03 27" src="https://user-images.githubusercontent.com/67913214/220222067-6a4abfa0-2184-40ec-9ea7-edbbb78a5aca.png">
 
+Now, we need to create a Concordium Wallet on Google Chrome or Brave
+https://chrome.google.com/webstore/detail/concordium-wallet/mnnkpffndmickbiakofclnpoiajlegmg?hl=en-US
+
+Install the wallet extension from above.
+
+Then, save your 24-word secret phrase and type it again on the wallet. Then, request an identity and select the. "Concordium testnet IP" option.
+After that, create your account and claim the 2000 CCD.
+
+<img width="349" alt="Screen Shot 2023-02-21 at 04 12 43" src="https://user-images.githubusercontent.com/67913214/220222959-3ab0a750-e7e4-4aa4-95bb-ea0904e76808.png"> <img width="349" alt="Screen Shot 2023-02-21 at 04 13 37" src="https://user-images.githubusercontent.com/67913214/220223051-55f1ee26-532c-40d3-926e-ac8487c4b63e.png">
+
+Almost last, I exported my private key from the settings over Concordium Web Wallet. 
+Its name was 3Q1BKsCmFHjd5ebiT9ZCghyT5MkAHr8rZJC8makv9szwY6R4nE.export
+
+Then, I moved this .export file (which includes my sign key and verify key inside) into the place where I run concordium-client (/usr/local/bin). By the way, If you wonder the file just open it via text editor.
+
+And lastly, I imported my wallet address by typing the verify key inside the 3Q1BKsCmFHjd5ebiT9ZCghyT5MkAHr8rZJC8makv9szwY6R4nE.export file.
+
+Command was..
+
+```
+$ concordium-client config account import <YOUR PUBLIC ADDRESS.export> --name <Your-Wallet-Name>
+```
+
+You can give any name that you want for the <Your-Wallet-Name> side.
+
+<img width="640" alt="Screen Shot 2023-02-21 at 04 22 16" src="https://user-images.githubusercontent.com/67913214/220224000-c5cbe564-4674-405a-b953-8f93a384e900.png">
+
+
+
+
