@@ -1,5 +1,14 @@
 # TASK 1: Setup Development Environment
 
+Before starting..
+My Concordium Mainnet address is:
+
+```
+3Vbzbdt6vKarjcSwHbMwpG2Czb4yZsNCpUZuondoJkEPJF914P
+```
+
+---
+
 ### The first task is to install Rustup which will install Rust and Cargo automatically but I've got installed it previously, so I just show it.
 
 ```
