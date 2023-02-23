@@ -15,7 +15,7 @@ Firsly, I installed the cargo-generate.
 $ cargo install --locked cargo-generate
 ```
 
-Then, I installed a sample smart contrac project.
+Then, I installed a sample smart contract project.
 
 ```
 $ cargo concordium init
@@ -25,9 +25,9 @@ My project's name is berkay-concordium.
 
 <img width="629" alt="Screen Shot 2023-02-23 at 05 45 11" src="https://user-images.githubusercontent.com/67913214/220810461-a375889e-a1d6-49b0-a89c-0cec1c8a7d57.png">
 
-I write a basic contract with Rust. I have just 2 functions one of them just updates a message, other one view it. Also, I wrote a test script for this contract.
+I write a basic contract with Rust. I have just 2 functions one of them just updates a message, other one is for viewing it. Also, I wrote a test script for this contract.
 
-After that, I build it by typing:
+After that, I built it by typing:
 
 ```
 $ cargo concordium build -e --out ./a.wasm.v1
